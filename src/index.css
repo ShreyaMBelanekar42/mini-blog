@@ -1,13 +1,78 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-container,
+hr, .content {
+  width: 95%;
+  max-width: 980px;
+  margin: auto;
+}
+
+hr {
+  background-color: rgb(231, 229, 229);
+  height: 1px;
+  border: 0;
+}
+
+.navbar-container,
+.navbar-links {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar-links {
+  gap: 1.2rem;
+}
+
+.navbar-links a {
+  padding: 0.25rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+  text-decoration: underline;
+  color: #ccabd8;
+}
+
+.title {
+  color: #ccabd8;
+  width: 80%;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.blog-preview{
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.blog-preview h2{
+  color: #ccabd8;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
+}
+
+.content h1{
+  padding: .5rem;
+  margin: 1.8rem;
+  width: fit-content;
+  font-size: 1.5rem;
+  font-weight: 300;
+  border-radius: 10px;
+  background-color: #ccabd8;
+  color: #fff;
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
