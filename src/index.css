@@ -7,7 +7,7 @@
 }
 
 .navbar-container,
-hr, .content {
+hr, .content, .loading-text, .error-text {
   width: 95%;
   max-width: 980px;
   margin: auto;
@@ -43,11 +43,17 @@ hr {
   color: #ccabd8;
 }
 
-.title {
+.title, .loading-text, .error-text {
   color: #ccabd8;
   width: 80%;
   font-size: 2.2rem;
   font-weight: 500;
+}
+
+.loading-text, .error-text{
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .blog-preview{
@@ -76,3 +82,4 @@ hr {
 .blog-preview:hover{
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
+
