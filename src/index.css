@@ -3,11 +3,11 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.navbar-container,
-hr, .content, .loading-text, .error-text {
+.app {
   width: 95%;
   max-width: 980px;
   margin: auto;
@@ -43,33 +43,36 @@ hr {
   color: #ccabd8;
 }
 
-.title, .loading-text, .error-text {
+.title,
+.loading-text,
+.error-text {
   color: #ccabd8;
   width: 80%;
   font-size: 2.2rem;
   font-weight: 500;
 }
 
-.loading-text, .error-text{
+.loading-text,
+.error-text {
   margin-top: 2rem;
   font-size: 2rem;
   font-weight: 300;
 }
 
-.blog-preview{
+.blog-preview {
   padding: 1rem;
   margin: 1rem;
 }
 
-.blog-preview h2{
+.blog-preview h2 {
   color: #ccabd8;
   font-weight: 400;
   font-size: 1.6rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-.content h1{
-  padding: .5rem;
+.content h1 {
+  padding: 0.5rem;
   margin: 1.8rem;
   width: fit-content;
   font-size: 1.5rem;
@@ -79,7 +82,6 @@ hr {
   color: #fff;
 }
 
-.blog-preview:hover{
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+.blog-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
