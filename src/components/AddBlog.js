@@ -1,14 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import {useHistory} from 'react-router-dom'
 
 const AddBlog = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const [body, setBody] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const history = useHistory();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = {title, author, body};
-    console.log(blog);
+    setIsLoading(true);
+    
+    fetch('http://localhost:8000/blogs', {
+      method: 'POST',
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(blog)
+    }).then(() => {
+      console.log("new blog added");
+      setIsLoading(false);
+      history.push('/');
+    })
   }
 
   return (
@@ -24,10 +37,8 @@ const AddBlog = () => {
         <label>Blog Body</label>
         <textarea required value={body} onChange={(e) => setBody(e.target.value)}/>
 
-        <button>Add Blog</button>
-        <p>{title}</p>
-        <p>{author}</p>
-        <p>{body}</p>
+        {!isLoading && <button>Add Blog</button>}
+        {isLoading && <button disabled>Adding Blog...</button>}
       </form>
     </div>
 

@@ -154,5 +154,18 @@ hr {
   border-radius: 10px;
   background-color: #ccabd8;
   color: #fff;
-  pointer: cursor;
+}
+
+.not-found{
+  font-size: 1.4rem;
+  margin: 1rem;
+}
+
+.not-found-link{
+  font-size: 1rem;
+}
+
+.not-found-link:hover,
+.not-found-link:focus {
+  color: #ccabd8;
 }
