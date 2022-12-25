@@ -22,13 +22,8 @@ Miniblog is an application where user can write small blogs about any topic they
 - JSON server
 
 ## How it looks
-
+- Homepage
 ![miniblog](https://user-images.githubusercontent.com/99599542/209478847-cf4412d8-f8a3-436b-a761-7f6fe388cd6e.png)
-
-
-
-
-
 
 
 
